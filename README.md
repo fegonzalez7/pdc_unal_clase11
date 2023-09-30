@@ -77,6 +77,10 @@ for f in frutas: # para cada elemento f en la lista de frutas
 ### Colección Rango (range)
 Existen varias colecciones que se pueden iterar en Python, una de ellas es la colección Rango (range). Una colección Rango (range) es una colección de números en un intervalo (rango) semi-abierto, definido por valor inicial (el lado cerrado del intervalo), un valor final (que no se incluye en el rango, es decir el lado abierto del intervalo), y un valor de incremento/decremento usado a partir del valor inicial para determinar que valores quedan en el rango. Si no se da el valor de inicio, éste se fija en cero (0) y si no se da valor de incremento/decremento, éste se fija en uno (1).
 
+Puede verse como un intervalo definido de esta manera:
+
+$$Intervalo: [a,b)$$
+
 Formas de crear un rango:
 
  + *range(N)*: La colección de enteros 0, 1, 2, . . . , N − 1, ésta es la colección de enteros empezando en cero (0), y llegando hasta N − 1 (no incluye N) incrementando de uno en uno. Si N no es positivo genera el rango vac´ıo.
