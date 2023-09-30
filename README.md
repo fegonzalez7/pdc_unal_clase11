@@ -9,7 +9,7 @@ Un esquema textual que en Python representa dicho ciclo para (for) es:
 ```python
 <bloque_prev>
 for <elemento> in <coleccion>:
-<bloque>
+	<bloque>
 <bloque_sigui>
 ```
 
