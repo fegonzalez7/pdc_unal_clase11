@@ -168,7 +168,7 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 3.  Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
 4. Imprimir los números de 1 hasta un número natural n dado, cada uno con su respectivo factorial
 5. Calcular el valor de 2 elevado a la potencia n usando ciclos for.
-6. Leer un número natural n, leer otro dato de tipo real x y calcular x^n usando ciclos for.
+6. Leer un número natural n, leer otro dato de tipo real x y calcular x^n usando ciclos for. **Disclaimer:** Trate de no utilizar el operador de potencia (**).
 7. Diseñe un programa que muestre las tablas de multiplicar del 1 al 9.
 8. Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
 $$e^x \approx exp(x,n) \approx \sum_{i=0}^{n}\frac{x^i}{i!}$$
