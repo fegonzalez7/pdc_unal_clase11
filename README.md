@@ -13,11 +13,11 @@ for <elemento> in <coleccion>:
 <bloque_sigui>
 ```
 
- + El fragmento <bloque_prev> es el bloque de instrucciones previas que han sido ejecutadas antes del ciclo.
- + El fragmento <elemento> es la variable que se usa para ir recorriendo (iterando) sobre los elementos de la colección (tomará como valor cada uno de ellos en cada iteración).
- + El fragmento <coleccion> es la colección de elementos que será recorrida (iterada) con el ciclo.
- + El fragmento <bloque> es el bloque de instrucciones principal del ciclo que se ejecuta con cada uno de los elementos de la colección. 
- + El fragmento <bloque_sigui> es el bloque de instrucciones que se ejecutan después de terminar de ejecutar el ciclo.
+ + El fragmento \<bloque_prev\> es el bloque de instrucciones previas que han sido ejecutadas antes del ciclo.
+ + El fragmento \<elemento\> es la variable que se usa para ir recorriendo (iterando) sobre los elementos de la colección (tomará como valor cada uno de ellos en cada iteración).
+ + El fragmento \<coleccion\> es la colección de elementos que será recorrida (iterada) con el ciclo.
+ + El fragmento \<bloque\> es el bloque de instrucciones principal del ciclo que se ejecuta con cada uno de los elementos de la colección. 
+ + El fragmento \<bloque_sigui\> es el bloque de instrucciones que se ejecutan después de terminar de ejecutar el ciclo.
 
 <table cellspacing="1" bgcolor="">
 	<tr bgcolor="#252582">
