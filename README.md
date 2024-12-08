@@ -1,13 +1,26 @@
 # Programación de Computadores - UNAL
+
+# Tabla de Contenido
+
+- [Programación de Computadores - UNAL](#programación-de-computadores---unal)
+- [Bucles 2](#bucles-2)
+   - [Ciclo for](#ciclo-for)
+   - [Listas](#listas)
+   - [Operador de pertenencia (membership)](#operador-de-pertenencia-membership)
+   - [Colección Rango (range)](#colección-rango-range)
+   - [Colecciones de rango y ciclos for](#colecciones-de-rango-y-ciclos-for)
+- [Reto 7](#reto-7)
+
 ## Bucles 2
 
 ### Ciclo for
-Un ciclo *para* (for) puede ser usado (y en Python es su único uso) para obtener uno a uno los elementos de una colección de elementos y poder realizar con cada uno de ellos el mismo bloque de operaciones.
+Un ciclo *para* (`for`) puede ser usado (y en Python es su principal uso) para obtener uno a uno los elementos de una colección de elementos y poder realizar con cada uno de ellos el mismo bloque de operaciones.
 
 Un esquema textual que en Python representa dicho ciclo para (for) es:
 
 ```python
 <bloque_prev>
+# Forma pythonic del ciclo for
 for <elemento> in <coleccion>:
 	<bloque>
 <bloque_sigui>
@@ -24,13 +37,13 @@ for <elemento> in <coleccion>:
 		<th><b>Definición</b></th>
 	</tr>
 	<tr bgcolor="#e4e4ed">
-		<td style="color:#141414">El ciclo para (for) se puede leer en castellano como: <i>Para cada elemento en la colección realice las instrucciones en el bloque</i>.</td>
+		<td style="color:#141414">El ciclo para (for) se puede leer en español como: <i>Para cada elemento en la colección realice las instrucciones en el bloque</i>.</td>
 	</tr>
 </table>
 
 ### Listas*
 
-Una *lista* es un tipo de dato en Python que permite almacenar una colección de *objetos* (variables) a los que se puede acceder a través de un índice.
+Una *lista* es un tipo de dato en Python que permite almacenar una colección de *objetos* (variables - de momento) a los que se puede acceder a través de un índice.
 
 **Disclaimer:** Las listas de verán en profundidad en la sección de arreglos y matrices.
 
@@ -74,8 +87,10 @@ for f in frutas: # para cada elemento f en la lista de frutas
   if f == "Guayaba": break # Termina el ciclo
 ```
 
-### Colección Rango (range)
-Existen varias colecciones que se pueden iterar en Python, una de ellas es la colección Rango (range). Una colección Rango (range) es una colección de números en un intervalo (rango) semi-abierto, definido por valor inicial (el lado cerrado del intervalo), un valor final (que no se incluye en el rango, es decir el lado abierto del intervalo), y un valor de incremento/decremento usado a partir del valor inicial para determinar que valores quedan en el rango. Si no se da el valor de inicio, éste se fija en cero (0) y si no se da valor de incremento/decremento, éste se fija en uno (1).
+### Colección Rango - `range`
+Existen varias colecciones que se pueden iterar en Python, una de ellas es la colección Rango (range). 
+
+Una colección Rango (range) es una colección de números en un intervalo (rango) semi-abierto, definido por valor inicial (el lado cerrado del intervalo), un valor final (que no se incluye en el rango, es decir el lado abierto del intervalo), y un valor de incremento/decremento usado a partir del valor inicial para determinar que valores quedan en el rango. Si no se da el valor de inicio, éste se fija en cero (0) y si no se da valor de incremento/decremento, éste se fija en uno (1).
 
 Puede verse como un intervalo definido de esta manera:
 
@@ -158,8 +173,8 @@ while i <= n:
 print("La suma hasta " + str(n) + " es " + str(suma)) 
 ```
 
-## Reto 8
-Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa individual asimismo cree un notebook con la solución a todos los problemas. Al finalizar suba todo a un repo y subalo al canal reto_8 en slack, para ellos se dispondrá de un listado donde debe pegar el enlace al repo (misma dinámica que con el taller 1).
+## Reto 7
+Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa individual asimismo cree un notebook con la solución a todos los problemas. Al finalizar suba todo a un repo y subalo al canal reto_7 en slack.
 
 **Nota:** Todo el código de aquí en adelante debe ir debidamente documentado.
 
@@ -167,16 +182,13 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 2.  Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
 3.  Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
 4. Imprimir los números de 1 hasta un número natural n dado, cada uno con su respectivo factorial
-5. Calcular el valor de 2 elevado a la potencia n usando ciclos for.
+5. Calcular el valor de 2 elevado a la potencia n usando ciclos *for*.
 6. Leer un número natural n, leer otro dato de tipo real x y calcular x^n usando ciclos for. **Disclaimer:** Trate de no utilizar el operador de potencia (**).
 7. Diseñe un programa que muestre las tablas de multiplicar del 1 al 9.
-8. Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
+8. Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Taylor. **Nota:** use *math* para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
 $$e^x \approx exp(x,n) \approx \sum_{i=0}^{n}\frac{x^i}{i!}$$
 9. Diseñar una función que permita calcular una aproximación de la función seno alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función seno y mostrar la diferencia entre el valor real y la aproximación.
 $$sin(x) \approx sin(x,n) \approx \sum_{i=0}^{n} (-1)^i \frac{x^{2i+1}}{(2i+1)!}$$
-10. Diseñar una función que permita calcular una aproximación de la función arcotangente alrededor de 0 para cualquier valor x en el rango [-1, 1], utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función arctan y mostrar la diferencia entre el valor real y la aproximación.
-$$arctan(x) \approx arctan(x,n) \approx \sum_{i=0}^{n} (-1)^i \frac{x^{2i+1}}{(2i+1)}$$
 
-**Disclaimer:** Para las aproximaciones de series determine con que valor n se obtiene menos del 0.1% de error.
 
 
